@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WanderNest Travels</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="topbar-container">
+      <div class="contact-info">
+        <a href="mailto:info@logo123.com" class="top-link">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="contact-text"> info@logo123.com</span>
+        </a>
+        <a href="tel:9000000009" class="top-link">
+          <i class="fa-solid fa-phone"></i>
+          <span class="contact-text"> 9000000009</span>
+        </a>
+      </div>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">WanderNest</div>
+    
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="visa.html">Visa</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-box">
+      <div class="hero-content">
+        <h1>Explore the World with <br><span>WanderNest</span></h1>
+        <p>Discover your next adventure with the best travel packages</p>
+        <a href="packages.html" class="cta-btn">Browse Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Packages Section -->
+  <section class="popular-packages">
+    <h2>Popular Packages</h2>
+    <div class="package-cards">
+      <div class="card">
+        <img src="https://c4.wallpaperflare.com/wallpaper/604/76/901/eiffel-tower-paris-france-the-river-seine-boats-blue-sky-wallpaper-preview.jpg" alt="Paris">
+        <h3>Paris Getaway</h3>
+        <p>5 Nights / 6 Days — ₹89,999</p>
+        <button class="btn" onclick="openModal('Paris Getaway')">Know More</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dubai">
+        <h3>Dubai Tour</h3>
+        <p>4 Nights / 5 Days — ₹75,000</p>
+        <button class="btn" onclick="openModal('Dubai Tour')">Know More</button>
+      </div>
+      <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bali">
+        <h3>Bali Escape</h3>
+        <p>6 Nights / 7 Days — ₹69,999</p>
+        <button class="btn" onclick="openModal('Bali Escape')">Know More</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- Modal Overlay -->
+    <div id="package-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title">Package Title</h3>
+        <ul id="modal-details" class="package-highlights">
+        <!-- Dynamic details will be inserted here -->
+        </ul>
+    </div>
+    </div>
+
+    <script src="script.js"></script> 
+
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose" style="margin-top: 60px;">
+    <h2>Why Choose WanderNest?</h2>
+    <div class="white-box">
+      <div class="features">
+        <div class="feature">
+          <span>🌍</span>
+          <p>Handpicked Destinations</p>
+        </div>
+        <div class="feature">
+          <span>💰</span>
+          <p>Affordable Pricing</p>
+        </div>
+        <div class="feature">
+          <span>🕒</span>
+          <p>24/7 Customer Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="white-box testimonial-list">
+    <blockquote>
+      “Booked a group trip to Thailand through WanderNest and everything was perfectly arranged — flights, hotel, even local activities. Super easy and reliable!”
+      <br><strong>– Neha Sharma, Mumbai</strong>
+    </blockquote>
+    <blockquote>
+      “Great customer support and very good package rates. Will definitely travel again through WanderNest!”
+      <br><strong>– Arjun Mehta, Delhi</strong>
+    </blockquote>
+    <blockquote>
+      “Our Europe tour was unforgettable! Thanks to WanderNest for organizing everything perfectly.”
+      <br><strong>– Priya & Karan, Bangalore</strong>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Contact CTA Section -->
+<section class="cta-contact">
+  <h2>Ready to Start Your Journey?</h2>
+  <p>Contact us today and let WanderNest plan your next great adventure!</p>
+  <div class="cta-btn-box">
+    <a href="contact.html" class="contact-btn">Contact Us Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="packages.html">Packages</a> |
+      <a href="visa.html">Visa</a> |
+      <a href="services.html">Services</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <p style="margin-top: 10px;">&copy; 2025 WanderNest Travels. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
