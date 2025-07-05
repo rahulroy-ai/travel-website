@@ -43,7 +43,12 @@ html, body {
   align-items: center;
   width: 100%;
 }
-
+.contact-icons a,
+.social-icons a {
+  margin: 0 5px;
+  color: white;
+  font-size: 18px;
+}
 .top-link {
   color: white;
   text-decoration: none;
