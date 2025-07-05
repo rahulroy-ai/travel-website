@@ -480,6 +480,10 @@ footer {
   }
 }
 
+.footer-contact .social-icons a i {
+    color: #000; 
+  }
+
 .footer-links a:hover {
   transform: scale(1.1);
   color: #00BFFF;
