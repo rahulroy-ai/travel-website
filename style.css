@@ -43,12 +43,7 @@ html, body {
   align-items: center;
   width: 100%;
 }
-.contact-icons a,
-.social-icons a {
-  margin: 0 5px;
-  color: white;
-  font-size: 18px;
-}
+
 .top-link {
   color: white;
   text-decoration: none;
@@ -71,20 +66,31 @@ html, body {
   .contact-text {
     display: none;
   }
-
-  .contact-info {
-    gap: 15px;
-  }
-
+  
   .topbar-container {
-    justify-content: space;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 10px;
   }
 
-  .contact-info, .social-icons {
+  .contact-icons,
+  .social-icons {
     display: flex;
-    gap: 8px;
-  } 
+    gap: 10px;
+  }
+
+  .top-bar {
+    padding: 8px 0;
+  }
+
+  .contact-icons a i,
+  .social-icons a i {
+    font-size: 18px;
+    color: white;
+  }
 }
 
 .contact-info i {
